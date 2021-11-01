@@ -78,6 +78,7 @@ src/Initializer.cc
 src/Viewer.cc
 src/gurobi_helper.cpp
 src/MapCompressionViewer.cpp
+src/VPStest.cpp
 )
 
 target_link_libraries(${PROJECT_NAME}

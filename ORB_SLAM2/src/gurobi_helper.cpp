@@ -66,7 +66,7 @@ Eigen::MatrixXd CalculateVisibilityMatrix(ORB_SLAM2::Map* map_data)
 void AddConstraint(ORB_SLAM2::Map* map_data, GRBModel& model_, Eigen::MatrixXd A, std::vector<GRBVar> x)
 {
     GRBLinExpr constraint = 0;
-    double b = 30.0;
+    double b = 50.0;
     for(int i = 0; i < map_data->KeyFramesInMap(); i++)
     {
        constraint.clear();

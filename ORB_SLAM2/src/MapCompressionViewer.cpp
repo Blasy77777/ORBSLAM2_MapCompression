@@ -6,6 +6,7 @@
 #include "KeyFrame.h"
 #include "System.h"
 #include <pangolin/pangolin.h>
+#include <ctime>
 
 
 // 00 - 02
@@ -66,8 +67,13 @@ void DrawMapCompression(std::vector<cv::Mat> AllMp)
     // bool bFollow = true;
     // bool bLocalizationMode = false;
 
+
+    // bool ViewerStop = true;
     while(1)
     {
+    //     int key = cv::waitKey(1);
+    //     if (key == 13) break;
+        
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // mpMapDrawer->GetCurrentOpenGLCameraMatrix(Twc);
